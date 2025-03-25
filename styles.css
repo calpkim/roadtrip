@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #660000;
+    overflow-x: hidden;
+}
+#header {
+    top: 0;
+    max-width: 100vw;
+    min-width: 100vw;
+    max-height: 10vh;
+    min-height: 10vh;
+    background-color: #000000;
+    color: #eeeeee;
+    display: flex;
+    padding-left: 1vw;
+    justify-content: space-between;
+    position: fixed;
+}
+.option {
+    display: flex;
+    align-items: center;
+}
+#options {
+    min-width: 50vw;
+    max-width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#title {
+    display: flex;
+    align-items: center;
+    max-width: 50vw;
+    min-width: 50vw;
+}
+#home {
+    min-height: 500vh;
+}
+#image {
+    min-width: 100vw;
+    max-width: 100vw;
+    position: sticky;
+    top: 10vh;
+    z-index: -1;
+}
+#WeAre {
+    text-align: center;
+    font-size: 10vh;
+    color: #eeeeee;
+    top: 15vh;
+}
+#footer {
+    bottom: 0;
+    text-align: center;
+}
