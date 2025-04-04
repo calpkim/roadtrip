@@ -32,6 +32,17 @@ body {
 .option {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: #eeeeee;
+}
+#ho:target {
+    text-decoration: underline;
+}
+#oo:target {
+    text-decoration: underline;
+}
+#co:target {
+    text-decoration: underline;
 }
 #options {
     min-width: 40vw;

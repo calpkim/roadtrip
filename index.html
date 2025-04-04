@@ -7,7 +7,7 @@
     <title>Roadtrip</title>
 </head>
 <body>
-    <nav id="header"><h1 id="title">ROADTRIP</h1><div id="options"><p class="option">Home</p><p class="option">About Us</p><p class="option">Contact Us</p></div></nav>
+    <nav id="header"><h1 id="title">ROADTRIP</h1><div id="options"><a href="#home" class="option" id="ho">Home</a><a href="#about" class="option" id="oo">About Us</a><a href="#contact" class="option" id="co">Contact Us</a></div></nav>
     <div id="home">
         <img src="roadtrip.jpg" alt="Roadtrip Image" id="image">
         <h2 id="WeAre">We are Roadtrip</h2>
@@ -15,5 +15,22 @@
     <div id="about"></div>
     <div id="contact"></div>
     <footer id="footer"><p>© 2025 Roadtrip</p></footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('div[id]');
+            const links = document.querySelectorAll('nav a');
+
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            const link = document.querySelector(`nav a[href="#${section.id}"]`);
+
+        if (rect.top <= 0 && rect.bottom >= 0) {
+            link.classList.add('active'); // Add underline to active link
+        } else {
+            link.classList.remove('active'); // Remove underline when not active
+    }
+  });
+});
+    </script>
 </body>
 </html>
